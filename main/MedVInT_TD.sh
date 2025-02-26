@@ -1,0 +1,1 @@
+python /home/jiayi/MammoVQA/Sota/MedVInT_TD/test.py

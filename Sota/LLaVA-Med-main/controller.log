@@ -1,0 +1,47 @@
+2024-10-15 07:09:49 | INFO | controller | args: Namespace(host='0.0.0.0', port=10000, dispatch_method='shortest_queue')
+2024-10-15 07:09:49 | INFO | controller | Init controller
+2024-10-15 07:09:49 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m2278708[0m]
+2024-10-15 07:09:49 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-10-15 07:09:49 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-10-15 07:09:49 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:10000[0m (Press CTRL+C to quit)
+2024-10-15 07:10:12 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2024-10-15 07:10:12 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-10-15 07:10:12 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-10-15 07:10:12 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m2278708[0m]
+2024-10-15 07:10:13 | ERROR | stderr | Exception ignored in: <module 'threading' from '/home/jiayi/anaconda3/envs/zjy/lib/python3.9/threading.py'>
+2024-10-15 07:10:13 | ERROR | stderr | Traceback (most recent call last):
+2024-10-15 07:10:13 | ERROR | stderr |   File "/home/jiayi/anaconda3/envs/zjy/lib/python3.9/threading.py", line 1477, in _shutdown
+2024-10-15 07:10:13 | ERROR | stderr |     lock.acquire()
+2024-10-15 07:10:13 | ERROR | stderr | KeyboardInterrupt:
+2024-10-15 07:10:55 | INFO | controller | args: Namespace(host='0.0.0.0', port=10000, dispatch_method='shortest_queue')
+2024-10-15 07:10:55 | INFO | controller | Init controller
+2024-10-15 07:10:55 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m2279194[0m]
+2024-10-15 07:10:55 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-10-15 07:10:55 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-10-15 07:10:55 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:10000[0m (Press CTRL+C to quit)
+2024-10-15 07:10:57 | INFO | stdout | [32mINFO[0m:     127.0.0.1:39714 - "[1mGET / HTTP/1.1[0m" [31m404 Not Found[0m
+2024-10-15 07:10:57 | INFO | stdout | [32mINFO[0m:     127.0.0.1:39714 - "[1mGET /favicon.ico HTTP/1.1[0m" [31m404 Not Found[0m
+2024-10-15 07:11:08 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2024-10-15 07:11:08 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-10-15 07:11:08 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-10-15 07:11:08 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m2279194[0m]
+2024-10-15 07:11:10 | ERROR | stderr | Exception ignored in: <module 'threading' from '/home/jiayi/anaconda3/envs/zjy/lib/python3.9/threading.py'>
+2024-10-15 07:11:10 | ERROR | stderr | Traceback (most recent call last):
+2024-10-15 07:11:10 | ERROR | stderr |   File "/home/jiayi/anaconda3/envs/zjy/lib/python3.9/threading.py", line 1477, in _shutdown
+2024-10-15 07:11:10 | ERROR | stderr |     lock.acquire()
+2024-10-15 07:11:10 | ERROR | stderr | KeyboardInterrupt:
+2024-10-15 07:13:09 | INFO | controller | args: Namespace(host='0.0.0.0', port=10000, dispatch_method='shortest_queue')
+2024-10-15 07:13:09 | INFO | controller | Init controller
+2024-10-15 07:13:09 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m2279988[0m]
+2024-10-15 07:13:09 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-10-15 07:13:09 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-10-15 07:13:09 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:10000[0m (Press CTRL+C to quit)
+2024-10-15 07:17:05 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2024-10-15 07:17:05 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-10-15 07:17:05 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-10-15 07:17:05 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m2279988[0m]
+2024-10-15 07:17:07 | ERROR | stderr | Exception ignored in: <module 'threading' from '/home/jiayi/anaconda3/envs/zjy/lib/python3.9/threading.py'>
+2024-10-15 07:17:07 | ERROR | stderr | Traceback (most recent call last):
+2024-10-15 07:17:07 | ERROR | stderr |   File "/home/jiayi/anaconda3/envs/zjy/lib/python3.9/threading.py", line 1477, in _shutdown
+2024-10-15 07:17:07 | ERROR | stderr |     lock.acquire()
+2024-10-15 07:17:07 | ERROR | stderr | KeyboardInterrupt:

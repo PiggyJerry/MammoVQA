@@ -1,0 +1,1 @@
+python /home/jiayi/MammoVQA/Sota/MedDr-main/demo.py

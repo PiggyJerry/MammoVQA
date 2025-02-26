@@ -1,0 +1,19 @@
+torch
+torchvision
+transformers==4.45.2
+accelerate
+peft
+deepspeed==0.14.4
+tiktoken
+matplotlib
+bitsandbytes
+av
+sentencepiece
+wandb
+protobuf
+
+# for qwen
+transformers_stream_generator
+
+# for webui
+gradio
