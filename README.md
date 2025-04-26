@@ -29,7 +29,19 @@ The json file of MammoVQA can be found in [Google Drive](https://drive.google.co
 
 | Dataset Name | Process Dataset Code |
 |--------------|----------------------|
-| BMCD |  |
+| BMCD | https://github.com/PiggyJerry/MammoVQA/blob/main/preprocess/BMCD.ipynb |
+| CBIS-DDSM | https://github.com/PiggyJerry/MammoVQA/blob/main/preprocess/CBIS-DDSM.ipynb |
+| CDD-CESM | https://github.com/PiggyJerry/MammoVQA/blob/main/preprocess/CDD-CESM.ipynb |
+| DMID | https://github.com/PiggyJerry/MammoVQA/blob/main/preprocess/DMID.ipynb |
+| INbreast | https://github.com/PiggyJerry/MammoVQA/blob/main/preprocess/INbreast.ipynb |
+| MIAS | https://github.com/PiggyJerry/MammoVQA/blob/main/preprocess/MIAS.ipynb |
+| CSAW-M | https://github.com/PiggyJerry/MammoVQA/blob/main/preprocess/CSAW-M.ipynb |
+| KAU-BCMD | https://github.com/PiggyJerry/MammoVQA/blob/main/preprocess/KAU-BCMD.ipynb |
+| VinDr-Mammo | https://github.com/PiggyJerry/MammoVQA/blob/main/preprocess/VinDr-Mammo.ipynb |
+| RSNA | https://github.com/PiggyJerry/MammoVQA/blob/main/preprocess/rsna.ipynb |
+| EMBED | https://github.com/PiggyJerry/MammoVQA/blob/main/preprocess/EMBED.ipynb |
+
+After downloaded sub-datasets above, you have to use the correspoding processing code for it. Remember to change the dataset link in the code!!!
 
 ## Prepare compared LVLMs
 Please follow the repositories of compared LVLMs ([BLIP-2\InstructBLIP](https://github.com/salesforce/LAVIS/tree/main),[LLaVA-Med](https://github.com/microsoft/LLaVA-Med),[LLaVA-NeXT-interleave](https://github.com/LLaVA-VL/LLaVA-NeXT),[Med-Flamingo](https://github.com/snap-stanford/med-flamingo),[MedDr](https://github.com/sunanhe/MedDr),[MedVInT_TD](https://github.com/xiaoman-zhang/PMC-VQA),[minigpt-4](https://github.com/Vision-CAIR/MiniGPT-4),[RadFM](https://github.com/chaoyi-wu/RadFM)) to prepare the weights and environments.
