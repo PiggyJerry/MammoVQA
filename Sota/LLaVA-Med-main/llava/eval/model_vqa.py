@@ -26,9 +26,6 @@ from llava.model.builder import load_pretrained_model
 from llava.utils import disable_torch_init
 from llava.mm_utils import tokenizer_image_token, get_model_name_from_path, KeywordsStoppingCriteria, process_images
 
-from Certainty_Score import certainty_score
-from Question_Answering_Score import question_answering_score
-from Utils import build_prompt
 from PIL import Image
 from Mammo_VQA_dataset import MammoVQA_image_Bench
 
@@ -112,7 +109,7 @@ def eval_model(args):
             result['qas_question']=qas_question
             result['qas_answer']=qas_answer
             results[str(img_id)] = result
-    with open(base_dir+'/Result/LLAVA-Med.json', 'w') as f:
+    with open(base_dir+'/Result/LLaVA-Med.json', 'w') as f:
         json.dump(results, f, indent=4)
     
 if __name__ == "__main__":
