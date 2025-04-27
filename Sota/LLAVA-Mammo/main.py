@@ -23,12 +23,7 @@ base_dir=current_dir.split('MammoVQA')[0]+'MammoVQA'
 
 sys.path.append(os.path.join(base_dir, 'Eval'))
 sys.path.append(os.path.join(base_dir, 'Benchmark'))
-sys.path.append(os.path.join(base_dir, 'Sota/LLaVA-NeXT-main'))
 
-
-from Certainty_Score import certainty_score
-from Question_Answering_Score import question_answering_score
-from Utils import build_prompt
 from PIL import Image
 from Mammo_VQA_dataset import MammoVQA_image_Bench
 
@@ -77,5 +72,5 @@ for images, qas_questions, img_ids in tqdm(eval_dataloader):
         result['qas_answer']=qas_answer
         results[str(img_id)] = result
     
-with open(base_dir+'/Result/LLAVA-Mammo.json', 'w') as f:
+with open(base_dir+'/Result/LLaVA-Mammo.json', 'w') as f:
     json.dump(results, f, indent=4)
