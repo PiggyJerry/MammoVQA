@@ -1,70 +1,0 @@
-2024-10-15 07:14:18 | INFO | model_worker | args: Namespace(host='0.0.0.0', port=40000, worker_address='http://localhost:40000', controller_address='http://localhost:10000', model_path='microsoft/llava-med-v1.5-mistral-7b', model_base=None, model_name=None, device='cuda', multi_modal=True, limit_model_concurrency=5, stream_interval=1, no_register=False, load_8bit=False, load_4bit=False)
-2024-10-15 07:14:18 | WARNING | model_worker | Multimodal mode is automatically detected with model name, please make sure `llava` is included in the model path.
-2024-10-15 07:14:18 | INFO | model_worker | Loading the model llava-med-v1.5-mistral-7b on worker 9ed6f9 ...
-2024-10-15 07:14:18 | ERROR | stderr | /home/jiayi/.conda/envs/llava-med/lib/python3.10/site-packages/huggingface_hub/file_download.py:1142: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
-2024-10-15 07:14:18 | ERROR | stderr |   warnings.warn(
-2024-10-15 07:14:19 | ERROR | stderr | Downloading shards:   0%|                                                                       | 0/4 [00:00<?, ?it/s]
-2024-10-15 07:14:20 | ERROR | stderr | 
-2024-10-15 07:14:20 | ERROR | stderr | model-00001-of-00004.safetensors:   1%|▍                                                 | 41.9M/4.94G [00:00<?, ?B/s]
-2024-10-15 07:14:20 | ERROR | stderr | [A
-2024-10-15 07:14:23 | ERROR | stderr | 
-2024-10-15 07:14:23 | ERROR | stderr | model-00001-of-00004.safetensors:   1%|▍                                         | 52.4M/4.94G [00:03<24:04, 3.39MB/s]
-2024-10-15 07:14:23 | ERROR | stderr | [A
-2024-10-15 07:14:25 | ERROR | stderr | 
-2024-10-15 07:14:25 | ERROR | stderr | model-00001-of-00004.safetensors:   1%|▌                                         | 62.9M/4.94G [00:04<17:22, 4.68MB/s]
-2024-10-15 07:14:25 | ERROR | stderr | [A
-2024-10-15 07:14:26 | ERROR | stderr | 
-2024-10-15 07:14:26 | ERROR | stderr | model-00001-of-00004.safetensors:   1%|▌                                         | 73.4M/4.94G [00:06<15:00, 5.41MB/s]
-2024-10-15 07:14:26 | ERROR | stderr | [A
-2024-10-15 07:14:27 | ERROR | stderr | model-00001-of-00004.safetensors:   1%|▌                                         | 73.4M/4.94G [00:07<19:35, 4.14MB/s]
-2024-10-15 07:14:27 | ERROR | stderr | 
-2024-10-15 07:14:27 | ERROR | stderr | Downloading shards:   0%|                                                                       | 0/4 [00:08<?, ?it/s]
-2024-10-15 07:14:27 | ERROR | stderr | 
-2024-10-15 07:14:27 | ERROR | stderr | Traceback (most recent call last):
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/runpy.py", line 196, in _run_module_as_main
-2024-10-15 07:14:27 | ERROR | stderr |     return _run_code(code, main_globals, None,
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/runpy.py", line 86, in _run_code
-2024-10-15 07:14:27 | ERROR | stderr |     exec(code, run_globals)
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/Mammo-VQA/Sota/LLaVA-Med-main/llava/serve/model_worker.py", line 275, in <module>
-2024-10-15 07:14:27 | ERROR | stderr |     worker = ModelWorker(args.controller_address,
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/Mammo-VQA/Sota/LLaVA-Med-main/llava/serve/model_worker.py", line 65, in __init__
-2024-10-15 07:14:27 | ERROR | stderr |     self.tokenizer, self.model, self.image_processor, self.context_len = load_pretrained_model(
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/Mammo-VQA/Sota/LLaVA-Med-main/llava/model/builder.py", line 31, in load_pretrained_model
-2024-10-15 07:14:27 | ERROR | stderr |     model = LlavaMistralForCausalLM.from_pretrained(
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3351, in from_pretrained
-2024-10-15 07:14:27 | ERROR | stderr |     resolved_archive_file, sharded_metadata = get_checkpoint_shard_files(
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/site-packages/transformers/utils/hub.py", line 1017, in get_checkpoint_shard_files
-2024-10-15 07:14:27 | ERROR | stderr |     cached_filename = cached_file(
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/site-packages/transformers/utils/hub.py", line 389, in cached_file
-2024-10-15 07:14:27 | ERROR | stderr |     resolved_file = hf_hub_download(
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py", line 101, in inner_f
-2024-10-15 07:14:27 | ERROR | stderr |     return f(*args, **kwargs)
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
-2024-10-15 07:14:27 | ERROR | stderr |     return fn(*args, **kwargs)
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1232, in hf_hub_download
-2024-10-15 07:14:27 | ERROR | stderr |     return _hf_hub_download_to_cache_dir(
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1381, in _hf_hub_download_to_cache_dir
-2024-10-15 07:14:27 | ERROR | stderr |     _download_to_tmp_and_move(
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1915, in _download_to_tmp_and_move
-2024-10-15 07:14:27 | ERROR | stderr |     http_get(
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 541, in http_get
-2024-10-15 07:14:27 | ERROR | stderr |     for chunk in r.iter_content(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/site-packages/requests/models.py", line 820, in generate
-2024-10-15 07:14:27 | ERROR | stderr |     yield from self.raw.stream(chunk_size, decode_content=True)
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/site-packages/urllib3/response.py", line 1060, in stream
-2024-10-15 07:14:27 | ERROR | stderr |     data = self.read(amt=amt, decode_content=decode_content)
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/site-packages/urllib3/response.py", line 949, in read
-2024-10-15 07:14:27 | ERROR | stderr |     data = self._raw_read(amt)
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/site-packages/urllib3/response.py", line 873, in _raw_read
-2024-10-15 07:14:27 | ERROR | stderr |     data = self._fp_read(amt, read1=read1) if not fp_closed else b""
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/site-packages/urllib3/response.py", line 856, in _fp_read
-2024-10-15 07:14:27 | ERROR | stderr |     return self._fp.read(amt) if amt is not None else self._fp.read()
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/http/client.py", line 466, in read
-2024-10-15 07:14:27 | ERROR | stderr |     s = self.fp.read(amt)
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/socket.py", line 717, in readinto
-2024-10-15 07:14:27 | ERROR | stderr |     return self._sock.recv_into(b)
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/ssl.py", line 1307, in recv_into
-2024-10-15 07:14:27 | ERROR | stderr |     return self.read(nbytes, buffer)
-2024-10-15 07:14:27 | ERROR | stderr |   File "/home/jiayi/.conda/envs/llava-med/lib/python3.10/ssl.py", line 1163, in read
-2024-10-15 07:14:27 | ERROR | stderr |     return self._sslobj.read(len, buffer)
-2024-10-15 07:14:27 | ERROR | stderr | KeyboardInterrupt
