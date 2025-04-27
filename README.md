@@ -56,6 +56,6 @@ For quick start, you can check the `Quick_demo` path.
 We demonstrate a simple diagnosis case here to show how to inference on MammoVQA with our LLaVA-Mammo.   
 Feel free to modify it as you want.
 
-- S1. Download [Model checkpoint]([https://huggingface.co/chaoyi-wu/RadFM](https://drive.google.com/file/d/1uFCrOTbsvug8YZoHKR7wlvoTSwzB32EY/view?usp=sharing)) of LLaVA-Mammo, and unzip it to `Quick_demo` path.
+- S1. Download [Model checkpoint](https://drive.google.com/file/d/1uFCrOTbsvug8YZoHKR7wlvoTSwzB32EY/view?usp=sharing) of LLaVA-Mammo, and unzip it to `Quick_demo` path.
 - S2. `python /MammoVQA/Quick_demo/main.py` to inference, you can get the result file in `/MammoVQA/Result/LLaVA-Mammo.json`.
 - S3. `python /MammoVQA/Eval/Output_score_combine.py` to calculate metrics.
