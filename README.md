@@ -23,7 +23,7 @@ Sub-Datasets downloading URL:
 | RSNA | https://www.kaggle.com/competitions/rsna-breast-cancer-detection/data | Open Access |
 | EMBED | [https://physionet.org/content/mimic-cxr/2.0.0](https://registry.opendata.aws/emory-breast-imaging-dataset-embed/) | Credentialed Access |
 
-The json file of MammoVQA can be found in [Google Drive](https://drive.google.com/file/d/1sdIV3LCk2GIKSEDzQJWDkY6tGTV_iTvR/view?usp=sharing), after downloading it, unzip the file and put into '/Benchmark'.
+The json file of MammoVQA can be found in [Google Drive](https://drive.google.com/file/d/1sdIV3LCk2GIKSEDzQJWDkY6tGTV_iTvR/view?usp=sharing), after downloading it, unzip the file and put into `/Benchmark`.
 
 ## Processing Dataset Codes and Files Linking:
 
@@ -44,18 +44,18 @@ The json file of MammoVQA can be found in [Google Drive](https://drive.google.co
 After downloaded sub-datasets above, you have to use the correspoding processing code for it. Remember to change the dataset link in the code!!!
 
 ## Prepare compared LVLMs
+If you only want to evaluate your model on MammoVQA, you can skip it.
+
 Please follow the repositories of compared LVLMs ([BLIP-2\InstructBLIP](https://github.com/salesforce/LAVIS/tree/main),[LLaVA-Med](https://github.com/microsoft/LLaVA-Med),[LLaVA-NeXT-interleave](https://github.com/LLaVA-VL/LLaVA-NeXT),[Med-Flamingo](https://github.com/snap-stanford/med-flamingo),[MedDr](https://github.com/sunanhe/MedDr),[MedVInT_TD](https://github.com/xiaoman-zhang/PMC-VQA),[minigpt-4](https://github.com/Vision-CAIR/MiniGPT-4),[RadFM](https://github.com/chaoyi-wu/RadFM)) to prepare the weights and environments.
 
-❗All the LLM weights should be put under 'MammoVQA/LLM/', except the weight of **MedVInT_TD** should be put under 'MammoVQA/Sota/MedVInT_TD/results/' and the weight of **RadFM** should be put under 'MammoVQA/Sota/RadFM-main/Quick_demo/'.
+❗All the LLM weights should be put under `MammoVQA/LLM/`, except the weight of **MedVInT_TD** should be put under `MammoVQA/Sota/MedVInT_TD/results/` and the weight of **RadFM** should be put under `MammoVQA/Sota/RadFM-main/Quick_demo/`.
 
 ## Quick Start:
 
 For quick start, you can check the `Quick_demo` path.
-In this demo, we recommend you to use our LLaVA-Mammo. Please download it from [Google Drive]
-We demonstrate a simple diagnosis case here to show how to inference with our model.   
+We demonstrate a simple diagnosis case here to show how to inference on MammoVQA with our LLaVA-Mammo.   
 Feel free to modify it as you want.
 
-- S1. Download [Model checkpoint](https://huggingface.co/chaoyi-wu/RadFM) or form  [baiduyun](https://pan.baidu.com/s/1A-K5nXCbvWAVqvb6dLjYJg?pwd=q1eo) (No need for decompressing).
-- S2. Decompress the original zip file, you can get a  `pytorch_model.bin`.
-- S3. put `pytorch_model.bin` under path `Quick_demo/`.
-- S4. python `test.py` and you can get a conversation as:
+- S1. Download [Model checkpoint]([https://huggingface.co/chaoyi-wu/RadFM](https://drive.google.com/file/d/1uFCrOTbsvug8YZoHKR7wlvoTSwzB32EY/view?usp=sharing)) of LLaVA-Mammo, and unzip it to `Quick_demo` path.
+- S2. `python /MammoVQA/Quick_demo/main.py` to inference, you can get the result file in `/MammoVQA/Result/LLaVA-Mammo.json`.
+- S3. `python /MammoVQA/Eval/Output_score_combine.py` to calculate metrics.
