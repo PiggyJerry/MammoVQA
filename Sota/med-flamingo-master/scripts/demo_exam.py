@@ -22,9 +22,7 @@ sys.path.append(os.path.join(base_dir, 'Sota/med-flamingo-master'))
 sys.path.append(os.path.join(base_dir, 'Sota/med-flamingo-master/open_flamingo-main/open_flamingo/src'))
 from factory import create_model_and_transforms
 from src.utils import FlamingoProcessor
-from Certainty_Score import certainty_score
-from Question_Answering_Score import question_answering_score
-from Utils import build_prompt
+
 from PIL import Image
 from Mammo_VQA_dataset import MammoVQA_exam_Bench
 
