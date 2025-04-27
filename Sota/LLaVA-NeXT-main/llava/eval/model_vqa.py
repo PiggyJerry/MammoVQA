@@ -31,9 +31,6 @@ from llava.mm_utils import tokenizer_image_token, get_model_name_from_path, Keyw
 
 from llava.constants import IGNORE_INDEX, DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN, IMAGE_TOKEN_INDEX
 
-from Certainty_Score import certainty_score
-from Question_Answering_Score import question_answering_score
-from Utils import build_prompt
 from PIL import Image
 from Mammo_VQA_dataset import MammoVQA_image_Bench
 
@@ -178,7 +175,7 @@ def eval_model(args):
             result['qas_answer']=qas_answer
             results[str(img_id)] = result
         
-    with open(base_dir+'/Result/LLAVA-NeXT-interleave.json', 'w') as f:
+    with open(base_dir+'/Result/LLaVA-NeXT-interleave.json', 'w') as f:
         json.dump(results, f, indent=4)
 
 
