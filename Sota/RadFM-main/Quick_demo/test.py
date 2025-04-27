@@ -21,8 +21,6 @@ base_dir=current_dir.split('MammoVQA')[0]+'MammoVQA'
 sys.path.append(os.path.join(base_dir, 'Eval'))
 sys.path.append(os.path.join(base_dir, 'Benchmark'))
 
-from Certainty_Score import certainty_score
-from Question_Answering_Score import question_answering_score
 from PIL import Image
 from Mammo_VQA_dataset import MammoVQA_image_Bench
 
