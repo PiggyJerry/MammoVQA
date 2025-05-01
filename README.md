@@ -3,6 +3,11 @@
 ## Clone repository
 ```shell
 git clone https://github.com/PiggyJerry/MammoVQA.git
+
+conda create -n mammovqa python==3.9
+conda activate mammovqa
+
+python -m pip install -r requirements.txt
 ```
 
 ## Prepare MammoVQA dataset
