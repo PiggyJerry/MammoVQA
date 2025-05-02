@@ -28,7 +28,7 @@ Sub-Datasets downloading URL:
 | RSNA | https://www.kaggle.com/competitions/rsna-breast-cancer-detection/data | Open Access |
 | EMBED | [https://physionet.org/content/mimic-cxr/2.0.0](https://registry.opendata.aws/emory-breast-imaging-dataset-embed/) | Credentialed Access |
 
-The json file of MammoVQA can be found in [Google Drive](https://drive.google.com/file/d/1sdIV3LCk2GIKSEDzQJWDkY6tGTV_iTvR/view?usp=sharing), after downloading it, unzip the file and put into `/Benchmark`.
+The json file of MammoVQA can be found in [Google Drive](https://drive.google.com/file/d/1eXgk5aJy8eHqJQpxbQVSOxnAUXKQRrda/view?usp=drive_link), after downloading it, unzip the file and put into `/Benchmark`.
 
 ## Processing Dataset Codes and Files Linking:
 
