@@ -20,23 +20,19 @@ def build_prompt(sample,score_type):
 
     if score_type=='question_answering_score':
         if question_type == 'single choice':
-            hint = Hint.get(question_topic, "")
             random.shuffle(options)
             shuffled_options=[f"{chr(65 + i)}: {option}" for i, option in enumerate(options)]
             formatted_options = ", ".join(shuffled_options)
-            prompt = single_choice_prefix.format(Question=question, Options=formatted_options, Hint=hint)
+            prompt = single_choice_prefix.format(Question=question, Options=formatted_options)
         elif question_type == 'yes/no':
-            hint = Hint.get(question_topic, "")
             random.shuffle(options)
             shuffled_options=[f"{chr(65 + i)}: {option}" for i, option in enumerate(options)]
             formatted_options = ", ".join(shuffled_options)
-            prompt = yesorno_prefix.format(Question=question, Options=formatted_options, Hint=hint)
+            prompt = yesorno_prefix.format(Question=question, Options=formatted_options)
         else:
-            hint = Hint.get(question_topic, "")
             random.shuffle(options)
             shuffled_options=[f"{chr(65 + i)}: {option}" for i, option in enumerate(options)]
             formatted_options = ", ".join(shuffled_options)
-
-            prompt = multiple_choice_prefix.format(Question=question, Options=formatted_options, Hint=hint)
+            prompt = multiple_choice_prefix.format(Question=question, Options=formatted_options)
        
     return prompt
