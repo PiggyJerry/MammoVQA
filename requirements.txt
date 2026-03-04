@@ -16,3 +16,4 @@ tokenizers>=0.20
 safetensors>=0.4
 accelerate>=0.26
 peft>=0.10
+scikit-learn>=1.3
