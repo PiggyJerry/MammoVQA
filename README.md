@@ -33,7 +33,7 @@ Sub-Datasets downloading URL:
 | MM | [Link](https://data.mendeley.com/datasets/fvjhtskg93/1) | [Mammogram mastery: a robust dataset for breast cancer detection and medical education](https://www.sciencedirect.com/science/article/pii/S2352340924006000) | Open Access |
 | NLBS | [Link](https://www.frdr-dfdr.ca/repo/dataset/cb5ddb98-ccdf-455c-886c-c9750a8c34c2) | [Full field digital mammography dataset from a population screening program](https://www.nature.com/articles/s41597-025-05866-0.pdf) | Open Access |
 
-The json file of MammoVQA can be found in [Google Drive](https://drive.google.com/file/d/1eXgk5aJy8eHqJQpxbQVSOxnAUXKQRrda/view?usp=sharing), after downloading it, unzip the file and put into `/Benchmark`.
+The json file of MammoVQA can be found in [Google Drive](https://drive.google.com/file/d/1R1xK6NpdOVVb5lUXIDkTFX1ysS3XBw6e/view?usp=sharing), after downloading it, unzip the file and put under `/Benchmark/`.
 
 ## Processing Dataset Codes and Files Linking:
 
