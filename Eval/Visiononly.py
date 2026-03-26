@@ -6,6 +6,9 @@ from fuzzywuzzy import process
 import re
 from scipy.stats import bootstrap, ttest_rel
 from sklearn.metrics import f1_score
+import os
+current_dir = os.path.dirname(os.path.abspath(__file__))
+base_dir=current_dir.split('MammoVQA')[0]+'MammoVQA'
 # Add the calculate_confidence_interval and calculate_p_value functions
 def calculate_confidence_interval(scores, confidence_level=0.95):
     if len(scores) == 0:
@@ -536,11 +539,11 @@ def format_qas_cs_output(eval_data, test_data, question_topic_info):
 
 # Example Usage
 if __name__ == "__main__":
-    with open('/home/jiayi/MammoVQA/Benchmark/MammoVQA-Image-Bench.json', 'r') as f:
+    with open(f'{base_dir}/Benchmark/MammoVQA-Image-Bench.json', 'r') as f:
         eval_data = json.load(f)
 
     method='DiNOv2'
-    with open(f'/home/jiayi/MammoVQA/Result/{method}.json', 'r') as f:
+    with open(f'{base_dir}/Result/{method}.json', 'r') as f:
         test_data = json.load(f)
     print(f'-------{method}--------')
 
