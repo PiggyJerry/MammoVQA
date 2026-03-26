@@ -60,6 +60,15 @@ Please follow the repositories of compared LVLMs ([BLIP-2\InstructBLIP](https://
 
 ❗All the LLM weights should be put under `MammoVQA/LLM/`, except the weight of **MedVInT_TD** should be put under `MammoVQA/Sota/MedVInT_TD/results/` and the weight of **RadFM** should be put under `MammoVQA/Sota/RadFM-main/Quick_demo/`.
 
+## Finetune DiNOv2
+You can finetune DiNOv2 on our MammoVQA training dataset and evaluate it on our test dataset. 
+
+- S1. Download the DiNOv2 pre-trained weight here[https://github.com/facebookresearch/dinov2], and modify the DiNOv2 weight's path in the 67 line of `/MammoVQA/finetune/DiNOv2/models/image_encoder.py`.
+- S2. `python /MammoVQA/finetune/DiNOv2/main.py` to train the model.
+- S3. `python /MammoVQA/finetune/DiNOv2/eval.py` to evaluate the model, and you can get the result file in `/MammoVQA/Result/DiNOv2.json`.
+- S4. `python /MammoVQA/Eval/Visiononly.py` to calculate metrics.
+
+
 ## Quick Start:
 
 For quick start, you can check the `Quick_demo` path.
@@ -67,9 +76,8 @@ We demonstrate a simple diagnosis case here to show how to inference on MammoVQA
 Feel free to modify it as you want.
 
 - S1. Download [Model checkpoint](https://drive.google.com/file/d/1uFCrOTbsvug8YZoHKR7wlvoTSwzB32EY/view?usp=sharing) of LLaVA-Mammo, and unzip it to `Quick_demo` path.
-- S2. `python /MammoVQA/Quick_demo/main.py` to inference, you can get the result file in `/MammoVQA/Result/LLaVA-Mammo.json`.
+- S2. `python /MammoVQA/Quick_demo/eval.py` to inference, and you can get the result file in `/MammoVQA/Result/LLaVA-Mammo.json`.
 - S3. `python /MammoVQA/Eval/LLM.py` to calculate metrics.
-
 ## Citation
 ```
 @article{zhu2025benchmark,
