@@ -2,6 +2,9 @@
 
 [![DOI](https://zenodo.org/badge/930210527.svg)](https://doi.org/10.5281/zenodo.17384739)
 
+## Notices
+Due to certain data-related restrictions, the model cannot be made publicly available at this time. We are currently exploring feasible options for its release.
+
 ## Clone repository
 ```shell
 git clone https://github.com/PiggyJerry/MammoVQA.git
@@ -75,7 +78,7 @@ For quick start, you can check the `Quick_demo` path.
 We demonstrate a simple diagnosis case here to show how to inference on MammoVQA with our LLaVA-Mammo.   
 Feel free to modify it as you want.
 
-- S1. Download [Model checkpoint](https://drive.google.com/file/d/1uFCrOTbsvug8YZoHKR7wlvoTSwzB32EY/view?usp=sharing) of LLaVA-Mammo, and unzip it to `Quick_demo` path.
+- S1. Download Model checkpoint (need request) of LLaVA-Mammo, and unzip it to `Quick_demo` path.
 - S2. `python /MammoVQA/Quick_demo/eval.py` to inference, and you can get the result file in `/MammoVQA/Result/LLaVA-Mammo.json`.
 - S3. `python /MammoVQA/Eval/LLM.py` to calculate metrics.
 ## Citation
